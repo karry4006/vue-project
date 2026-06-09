@@ -1,0 +1,65 @@
+:root {
+    --paypal-blue: #0070ba;
+    --paypal-dark: #003087;
+    --menu-blue: #022a88;
+    --light-bg: #f4f6f8;
+    --text-dark: #2c2e2f;
+    --text-light: #6b6f76;
+    --container: 1180px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    color: var(--text-dark);
+    background: #fff;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reusable buttons styles */
+.btn-outline,
+.btn-solid {
+    border-radius: 999px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid transparent;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-outline {
+    border-color: var(--paypal-blue);
+    color: var(--paypal-blue);
+    background: #fff;
+}
+
+.btn-outline:hover {
+    border-color: var(--paypal-dark);
+    color: var(--paypal-dark);
+    background: rgba(0, 112, 186, 0.05);
+}
+
+.btn-solid {
+    border-color: var(--paypal-blue);
+    background: var(--paypal-blue);
+    color: #fff;
+}
+
+.btn-solid:hover {
+    border-color: var(--paypal-dark);
+    background: var(--paypal-dark);
+}
